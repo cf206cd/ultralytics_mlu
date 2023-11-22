@@ -11,6 +11,7 @@ dpkg-query -s linux-headers-$(uname -r)
 sudo dpkg -i <package.deb>
 ```
 use ```cnmon``` to test.
+
 2. Install CNToolkit,Cambricon CNNL,CNCL,CNCV,Cambricon DALI,CNNL_Extra,Cambricon BANGC OPS:
 ```
 wget https://sdk.cambricon.com/static/Basis/MLU370_X86_ubuntu20.04/cntoolkit_3.7.2-1.ubuntu20.04_amd64.deb

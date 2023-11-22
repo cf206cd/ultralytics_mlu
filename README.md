@@ -28,14 +28,14 @@ sudo dpkg -i mluops_0.9.0-1.ubuntu18.04_amd64.deb
 wget https://sdk.cambricon.com/static/Basis/MLU370_X86_ubuntu20.04/cambricon_dali-0.9.0-py3-none-manylinux2014_x86_64.whl
 pip install cambricon_dali-0.9.0-py3-none-manylinux2014_x86_64.whl
 ```
-1. Set environment path:
+3. Set environment path:
 ```
 export NEUWARE_HOME=usr/local/neuware # 依赖库安装路径，根据依赖库实际安装路径修改
 export PATH=$PATH:$NEUWARE_HOME/bin # 系统环境变量，添加依赖库可行执行文件路径
 export LD_LIBRARY_PATH=$NEUWARE_HOME/lib64:$LD_LIBRARY_PATH # 系统环境变量， 添加依赖库库文件路径
 ```
 
-1. Install PyTorch,torch_mlu and torchvision, remember only support Python 3.10 now.
+4. Install PyTorch,torch_mlu and torchvision, remember only support Python 3.10 now.
 ```
 wget https://sdk.cambricon.com/static/PyTorch/MLU370_1.13_v1.17.0_X86_ubuntu18.04_python3.10_pip/torch-1.13.1-cp310-cp310-linux_x86_64.whl
 wget https://sdk.cambricon.com/static/PyTorch/MLU370_1.13_v1.17.0_X86_ubuntu18.04_python3.10_pip/torch_mlu-1.17.0+torch1.13-cp310-cp310-linux_x86_64.whl
@@ -44,7 +44,7 @@ pip install https://sdk.cambricon.com/static/PyTorch/MLU370_1.13_v1.17.0_X86_ubu
 pip install https://sdk.cambricon.com/static/PyTorch/MLU370_1.13_v1.17.0_X86_ubuntu18.04_python3.10_pip/torch_mlu-1.17.0+torch1.13-cp310-cp310-linux_x86_64.whl
 pip install https://sdk.cambricon.com/static/PyTorch/MLU370_1.13_v1.17.0_X86_ubuntu18.04_python3.10_pip/torchvision-0.14.1a0+5e8e2f1-cp310-cp310-linux_x86_64.whl
 ```
-1. Install ultralytics
+5. Install ultralytics
 ```
 git clone https://github.com/cf206cd/ultralytics_mlu.git
 cd ultralytics_mlu
